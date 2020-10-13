@@ -2,7 +2,7 @@
 
 body {
     height: 100%;
-    background-image: linear-gradient($bg-gradientOne, $bg-gradientTwo);
+    background: linear-gradient($bg-gradientOne, $bg-gradientTwo) no-repeat;
     font-size: $fontSize;
     @import url($fontFamily);
 }
