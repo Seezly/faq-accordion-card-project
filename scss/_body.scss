@@ -1,0 +1,7 @@
+@import "variables";
+
+body {
+    background-image: linear-gradient($bg-gradientOne, $bg-gradientTwo);
+    font-size: $fontSize;
+    @import url(https://fonts.google.com/specimen/Kumbh+Sans);
+}
