@@ -1,0 +1,73 @@
+/*
+
+                                            VARIABLES
+
+*/
+/*
+
+                                            TEXT
+
+*/
+/*
+
+                                            GRADIENT
+
+*/
+/*
+
+                                            OTHERS
+
+*/
+/*
+
+                                            BODY
+
+*/
+/*
+
+                                            TEXT
+
+*/
+/*
+
+                                            GRADIENT
+
+*/
+/*
+
+                                            OTHERS
+
+*/
+body {
+  height: 100%;
+  background-image: linear-gradient(#af67e9, #6565e7);
+  font-size: 12px;
+  @import url("https://fonts.google.com/specimen/Kumbh+Sans");
+}
+
+/*
+
+                                            FAQ CARD CONTAINER
+
+*/
+/*
+
+                                            TEXT
+
+*/
+/*
+
+                                            GRADIENT
+
+*/
+/*
+
+                                            OTHERS
+
+*/
+.faq-container {
+  width: 60%;
+  margin: 10% auto;
+}
+
+/*# sourceMappingURL=main.css.map */
