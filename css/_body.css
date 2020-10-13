@@ -1,23 +1,23 @@
 /*
 
-                        TEXT
+                                            TEXT
 
 */
 /*
 
-                        GRADIENT
+                                            GRADIENT
 
 */
 /*
 
-                        OTHERS
+                                            OTHERS
 
 */
 body {
   height: 100%;
-  background-image: linear-gradient(#af67e9, #6565e7);
+  background: linear-gradient(#af67e9, #6565e7) no-repeat;
   font-size: 12px;
-  @import url(https://fonts.google.com/specimen/Kumbh+Sans);
+  @import url("https://fonts.google.com/specimen/Kumbh+Sans");
 }
 
 /*# sourceMappingURL=_body.css.map */
