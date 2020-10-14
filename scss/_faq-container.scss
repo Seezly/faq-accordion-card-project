@@ -1,11 +1,31 @@
 .faq-container {
-    width: 60%;
+    width: 62.5%;
     margin: 10% auto;
-    background: url("../images/bg-pattern-desktop.svg") no-repeat;
+    background: url("../images/bg-pattern-desktop.svg") white no-repeat;
     background-size: cover;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
+    padding: 3rem 6rem;
+    overflow: hidden;
 
-    h1 {
-        margin: 2rem 0 2rem 50%;
+    &__container {
+        width: 50%;
+        float: right;
+
+        &__title {
+            margin: 2rem 0;
+        }
     }
+}
+
+.card {
+    padding: 1rem 0;
+
+    &__faq-answer {
+        color: $textSecundary;
+        display: none;
+    }
+}
+
+.attribution {
+    text-align: center;
 }

@@ -34,7 +34,6 @@ html {
 }
 
 body {
-  height: 100%;
   background: linear-gradient(#af67e9, #6565e7) no-repeat;
   font-size: 12px;
 }
@@ -47,11 +46,17 @@ body {
 .faq-container {
   width: 60%;
   margin: 10% auto;
-  background: url("../images/bg-pattern-desktop.svg") no-repeat;
+  background: url("../images/bg-pattern-desktop.svg") white no-repeat;
   background-size: cover;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
+  padding: 3rem;
+  overflow: hidden;
 }
-.faq-container h1 {
+.faq-container__container {
+  width: 50%;
+  float: right;
+}
+.faq-container__container__title {
   margin: 2rem 0 2rem 50%;
 }
 
