@@ -13,11 +13,15 @@
                                             OTHERS
 
 */
+@import url("https://fonts.google.com/specimen/Kumbh+Sans");
+html {
+  height: 100%;
+}
+
 body {
   height: 100%;
   background: linear-gradient(#af67e9, #6565e7) no-repeat;
   font-size: 12px;
-  @import url("https://fonts.google.com/specimen/Kumbh+Sans");
 }
 
 /*# sourceMappingURL=_body.css.map */
