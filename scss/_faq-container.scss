@@ -1,5 +1,11 @@
 .faq-container {
     width: 60%;
     margin: 10% auto;
-    background: url("../images/bg-pattern-desktop.svg");
+    background: url("../images/bg-pattern-desktop.svg") no-repeat;
+    background-size: cover;
+    border-radius: 2rem;
+
+    h1 {
+        margin: 2rem 0 2rem 50%;
+    }
 }
