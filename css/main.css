@@ -20,25 +20,15 @@
 */
 /*
 
-                                            BODY
-
-*/
-/*
-
-                                            TEXT
-
-*/
-/*
-
-                                            GRADIENT
-
-*/
-/*
-
-                                            OTHERS
+                                            FONT-FAMILY
 
 */
 @import url("https://fonts.google.com/specimen/Kumbh+Sans");
+/*
+
+                                            BODY
+
+*/
 html {
   height: 100%;
 }
@@ -54,25 +44,15 @@ body {
                                             FAQ CARD CONTAINER
 
 */
-/*
-
-                                            TEXT
-
-*/
-/*
-
-                                            GRADIENT
-
-*/
-/*
-
-                                            OTHERS
-
-*/
 .faq-container {
   width: 60%;
   margin: 10% auto;
-  background-color: white;
+  background: url("../images/bg-pattern-desktop.svg") no-repeat;
+  background-size: cover;
+  border-radius: 2rem;
+}
+.faq-container h1 {
+  margin: 2rem 0 2rem 50%;
 }
 
 /*# sourceMappingURL=main.css.map */
