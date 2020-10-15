@@ -29,13 +29,12 @@
                                             BODY
 
 */
-html {
-  height: 100%;
-}
-
 body {
+  height: 100%;
   background: linear-gradient(#af67e9, #6565e7) no-repeat;
   font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
   line-height: 2rem;
   color: #4a4b5e;
 }
@@ -64,6 +63,23 @@ body {
 
 .card {
   padding: 1rem 0;
+}
+.card__faq {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: #e7e7e9 1px solid;
+  cursor: pointer;
+}
+.card__faq .toggle-icon {
+  max-height: 7px;
+}
+.card__faq:hover {
+  color: #f47c57;
+}
+.card__faq:active {
+  color: #1d1e35;
+  font-weight: 700;
 }
 .card__faq-answer {
   color: #787887;

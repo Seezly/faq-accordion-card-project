@@ -20,6 +20,27 @@
 .card {
     padding: 1rem 0;
 
+    &__faq {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: $dividers-bottom 1px solid;
+        cursor: pointer;
+
+        .toggle-icon {
+            max-height: 7px;
+        }
+    }
+
+    &__faq:hover {
+        color: $textHover;
+    }
+
+    &__faq:active {
+        color: $textActive;
+        font-weight: $fontWeightSecundary;
+    }
+
     &__faq-answer {
         color: $textSecundary;
         display: none;

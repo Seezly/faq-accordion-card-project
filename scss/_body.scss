@@ -1,10 +1,9 @@
-html {
-    height: 100%;
-}
-
 body {
+    height: 100%;
     background: linear-gradient($bg-gradientOne, $bg-gradientTwo) no-repeat;
     font-size: $fontSize;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: $fontWeightPrimary;
     line-height: 2rem;
     color: $textPrimary;
 }
