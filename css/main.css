@@ -47,28 +47,29 @@ body {
 .faq-container {
   width: 62.5%;
   margin: 10% auto;
-  background: url("../images/bg-pattern-desktop.svg") -36vh -36vh white no-repeat;
+  background: url("../images/bg-pattern-desktop.svg") -66vh -36vh white no-repeat, url("../images/illustration-woman-online-desktop.svg") white no-repeat;
   background-size: cover;
   border-radius: 1.25rem;
   padding: 3rem 6rem;
   overflow: hidden;
+  box-shadow: 0.5rem 1rem 2rem #4a4b5e;
+}
+.faq-container__title, .faq-container h6 {
+  color: #1d1e35;
 }
 .faq-container__container {
   width: 50%;
   float: right;
 }
-.faq-container__container__title {
-  margin: 2rem 0;
-}
 
 .card {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
+  border-bottom: #e7e7e9 1px solid;
 }
 .card__faq {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: #e7e7e9 1px solid;
   cursor: pointer;
 }
 .card__faq .toggle-icon {
