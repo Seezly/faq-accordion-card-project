@@ -1,21 +1,32 @@
 .faq-container {
     width: 62.5%;
     margin: 10% auto;
-    background: url("../images/bg-pattern-desktop.svg") -66vh -36vh white no-repeat,
-                url("../images/illustration-woman-online-desktop.svg") white no-repeat;
+    background: url("../images/bg-pattern-desktop.svg") -66vh -36vh white no-repeat;
     background-size: cover;
     border-radius: 1.25rem;
     padding: 3rem 6rem;
     overflow: hidden;
     box-shadow: 0.5rem 1rem 2rem $textPrimary;
+    display: flex;
 
-    &__title, h6 {
-        color: $textActive;
+    &__woman-online {
+        width: 50%;
+        background: url("../images/illustration-woman-online-desktop.svg") rgb(0 0 0 / 0%) no-repeat;
+        background-size: cover;
+
+        &__img {
+            position: absolute;
+            transform: translate(-99%, 50%);
+        }
     }
-
+    
     &__container {
         width: 50%;
         float: right;
+
+        &__title {
+            color: $textActive;
+        }
     }
 }
 
@@ -51,4 +62,25 @@
 
 .attribution {
     text-align: center;
+
+    a {
+        text-decoration: none;
+        color: $textHover;
+
+        &:visited {
+            color: $textSecundary;
+        }
+
+        &:active {
+            color: $textActive;
+        }
+    }
+
+    h6 {
+        color: $textActive;
+    }
+
+    &__wavy {
+        text-decoration: wavy underline;
+    }
 }
