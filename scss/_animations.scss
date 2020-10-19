@@ -1,0 +1,21 @@
+@mixin transition($d) {
+    transition:all $d;
+    -moz-transition:all $d;
+    -o-transition:all $d;
+    -webkit-transition:all $d;
+}
+
+@mixin animation($d) {
+    transition:jump $d ease infinite;
+    -moz-transition:jump $d ease infinite;
+    -o-transition:jump $d ease infinite;
+    -webkit-transition:jump $d ease infinite;
+}
+
+@keyframes jump {
+    0% {transform: translate(0, 0);}
+    25% {transform: translate(0, -0.167rem);}
+    50% {transform: translate(0, 0);}
+    75% {transform: translate(0, 0.167rem);}
+    100% {transform: translate(0, 0);}
+}

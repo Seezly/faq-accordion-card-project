@@ -1,3 +1,5 @@
+@import "animations";
+
 .faq-container {
     width: 62.5%;
     margin: 10% auto;
@@ -44,19 +46,26 @@
 
         .toggle-icon {
             max-height: 7px;
+
+            @include transition(.5s);
         }
 
         &:target &__a{
             color: $textActive;
+            font-weight: $fontWeightSecundary;
             text-decoration: none;
         }
 
         &:target &-answer {
             max-height: 15rem;
+
+            @include transition(.5s);
         }
 
         &:target .toggle-icon {
             transform: rotate(180deg);
+
+            @include transition(.5s);
         }
 
         &__a {
@@ -67,17 +76,18 @@
 
     &__faq:hover {
         color: $textHover;
-    }
 
-    &__faq:active {
-        color: $textActive;
-        font-weight: $fontWeightSecundary;
+        & .toggle-icon {
+            @include animation(.5s);
+        }
     }
 
     &__faq-answer {
         color: $textSecundary;
         overflow: hidden;
         max-height: 0rem;
+
+        @include transition(.5s);
     }
 
 }

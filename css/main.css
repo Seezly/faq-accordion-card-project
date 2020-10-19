@@ -44,6 +44,23 @@ body {
                                             FAQ CARD CONTAINER
 
 */
+@keyframes jump {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(0, -0.167rem);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  75% {
+    transform: translate(0, 0.167rem);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
 .faq-container {
   width: 62.5%;
   margin: 10% auto;
@@ -86,16 +103,29 @@ body {
 }
 .card__faq .toggle-icon {
   max-height: 7px;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 .card__faq:target .card__faq__a {
   color: #1d1e35;
+  font-weight: 700;
   text-decoration: none;
 }
 .card__faq:target .card__faq-answer {
   max-height: 15rem;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 .card__faq:target .toggle-icon {
   transform: rotate(180deg);
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 .card__faq__a {
   color: #4a4b5e;
@@ -104,14 +134,20 @@ body {
 .card__faq:hover {
   color: #f47c57;
 }
-.card__faq:active {
-  color: #1d1e35;
-  font-weight: 700;
+.card__faq:hover .toggle-icon {
+  transition: jump 0.5s ease infinite;
+  -moz-transition: jump 0.5s ease infinite;
+  -o-transition: jump 0.5s ease infinite;
+  -webkit-transition: jump 0.5s ease infinite;
 }
 .card__faq-answer {
   color: #787887;
   overflow: hidden;
   max-height: 0rem;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 
 .attribution {
