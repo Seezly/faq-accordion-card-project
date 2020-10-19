@@ -58,6 +58,11 @@
         &:target .toggle-icon {
             transform: rotate(180deg);
         }
+
+        &__a {
+            color: $textPrimary;
+            text-decoration: none;
+        }
     }
 
     &__faq:hover {

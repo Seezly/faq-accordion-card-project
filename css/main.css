@@ -97,6 +97,10 @@ body {
 .card__faq:target .toggle-icon {
   transform: rotate(180deg);
 }
+.card__faq__a {
+  color: #4a4b5e;
+  text-decoration: none;
+}
 .card__faq:hover {
   color: #f47c57;
 }
