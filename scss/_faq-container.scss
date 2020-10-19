@@ -2,7 +2,7 @@
     width: 62.5%;
     margin: 10% auto;
     background: url("../images/bg-pattern-desktop.svg") -66vh -36vh white no-repeat;
-    background-size: cover;
+    background-size: 100%;
     border-radius: 1.25rem;
     padding: 3rem 6rem 3rem 0;
     overflow: hidden;
@@ -11,12 +11,13 @@
 
     &__woman-online {
         width: 66%;
-        background: url("../images/illustration-woman-online-desktop.svg") -4vw 6vh rgb(0 0 0 / 0%) no-repeat;
-        background-size: cover;
+        background: url("../images/illustration-woman-online-desktop.svg") -4vw 0vh rgb(0 0 0 / 0%) no-repeat;
+        background-size: 100%;
 
         &__img {
+            width: 15.125%;
             position: absolute;
-            transform: translate(-48.5%, 75%);
+            transform: translate(-7.5vw, 15vh);
         }
     }
     
@@ -39,12 +40,13 @@
         justify-content: space-between;
         align-items: center;
         cursor: pointer;
+        flex-wrap: wrap;
 
         .toggle-icon {
             max-height: 7px;
         }
 
-        &:target, .card__faq--answer {
+        &:target .card__faq--answer {
             max-height: 15rem;
         }
 
@@ -72,6 +74,7 @@
 
 .attribution {
     text-align: center;
+    color: $textActive;
 
     a {
         text-decoration: none;
@@ -84,10 +87,6 @@
         &:active {
             color: $textActive;
         }
-    }
-
-    h6 {
-        color: $textActive;
     }
 
     &__wavy {
