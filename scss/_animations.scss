@@ -6,10 +6,10 @@
 }
 
 @mixin animation($d) {
-    transition:jump $d ease infinite;
-    -moz-transition:jump $d ease infinite;
-    -o-transition:jump $d ease infinite;
-    -webkit-transition:jump $d ease infinite;
+    animation:jump $d ease infinite;
+    -moz-animation:jump $d ease infinite;
+    -o-animation:jump $d ease infinite;
+    -webkit-animation:jump $d ease infinite;
 }
 
 @keyframes jump {

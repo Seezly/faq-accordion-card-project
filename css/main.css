@@ -135,10 +135,11 @@ body {
   color: #f47c57;
 }
 .card__faq:hover .toggle-icon {
-  transition: jump 0.5s ease infinite;
-  -moz-transition: jump 0.5s ease infinite;
-  -o-transition: jump 0.5s ease infinite;
-  -webkit-transition: jump 0.5s ease infinite;
+  transform: rotate(180deg);
+  animation: jump 0.5s ease infinite;
+  -moz-animation: jump 0.5s ease infinite;
+  -o-animation: jump 0.5s ease infinite;
+  -webkit-animation: jump 0.5s ease infinite;
 }
 .card__faq-answer {
   color: #787887;

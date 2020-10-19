@@ -78,6 +78,8 @@
         color: $textHover;
 
         & .toggle-icon {
+            transform: rotate(180deg);
+
             @include animation(.5s);
         }
     }
