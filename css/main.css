@@ -87,7 +87,11 @@ body {
 .card__faq .toggle-icon {
   max-height: 7px;
 }
-.card__faq:target .card__faq--answer {
+.card__faq:target .card__faq__a {
+  color: #1d1e35;
+  text-decoration: none;
+}
+.card__faq:target .card__faq-answer {
   max-height: 15rem;
 }
 .card__faq:target .toggle-icon {

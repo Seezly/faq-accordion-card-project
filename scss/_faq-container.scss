@@ -46,7 +46,12 @@
             max-height: 7px;
         }
 
-        &:target .card__faq--answer {
+        &:target &__a{
+            color: $textActive;
+            text-decoration: none;
+        }
+
+        &:target &-answer {
             max-height: 15rem;
         }
 
