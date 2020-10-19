@@ -44,7 +44,7 @@
             max-height: 7px;
         }
 
-        &:target, &--answer {
+        &:target, .card__faq--answer {
             max-height: 15rem;
         }
 
@@ -64,7 +64,6 @@
 
     &__faq-answer {
         color: $textSecundary;
-        display: none;
         overflow: hidden;
         max-height: 0rem;
     }
