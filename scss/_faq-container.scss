@@ -4,19 +4,19 @@
     background: url("../images/bg-pattern-desktop.svg") -66vh -36vh white no-repeat;
     background-size: cover;
     border-radius: 1.25rem;
-    padding: 3rem 6rem;
+    padding: 3rem 6rem 3rem 0;
     overflow: hidden;
     box-shadow: 0.5rem 1rem 2rem $textPrimary;
     display: flex;
 
     &__woman-online {
-        width: 50%;
-        background: url("../images/illustration-woman-online-desktop.svg") rgb(0 0 0 / 0%) no-repeat;
+        width: 66%;
+        background: url("../images/illustration-woman-online-desktop.svg") -4vw 6vh rgb(0 0 0 / 0%) no-repeat;
         background-size: cover;
 
         &__img {
             position: absolute;
-            transform: translate(-99%, 50%);
+            transform: translate(-48.5%, 75%);
         }
     }
     
@@ -43,6 +43,14 @@
         .toggle-icon {
             max-height: 7px;
         }
+
+        &:target, &--answer {
+            max-height: 15rem;
+        }
+
+        &:target .toggle-icon {
+            transform: rotate(180deg);
+        }
     }
 
     &__faq:hover {
@@ -57,7 +65,10 @@
     &__faq-answer {
         color: $textSecundary;
         display: none;
+        overflow: hidden;
+        max-height: 0rem;
     }
+
 }
 
 .attribution {
@@ -68,7 +79,7 @@
         color: $textHover;
 
         &:visited {
-            color: $textSecundary;
+            color: $textHover;
         }
 
         &:active {

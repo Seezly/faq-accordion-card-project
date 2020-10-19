@@ -50,19 +50,19 @@ body {
   background: url("../images/bg-pattern-desktop.svg") -66vh -36vh white no-repeat;
   background-size: cover;
   border-radius: 1.25rem;
-  padding: 3rem 6rem;
+  padding: 3rem 6rem 3rem 0;
   overflow: hidden;
   box-shadow: 0.5rem 1rem 2rem #4a4b5e;
   display: flex;
 }
 .faq-container__woman-online {
-  width: 50%;
-  background: url("../images/illustration-woman-online-desktop.svg") rgba(0, 0, 0, 0) no-repeat;
+  width: 66%;
+  background: url("../images/illustration-woman-online-desktop.svg") -4vw 6vh rgba(0, 0, 0, 0) no-repeat;
   background-size: cover;
 }
 .faq-container__woman-online__img {
   position: absolute;
-  transform: translate(-99%, 50%);
+  transform: translate(-48.5%, 75%);
 }
 .faq-container__container {
   width: 50%;
@@ -85,6 +85,12 @@ body {
 .card__faq .toggle-icon {
   max-height: 7px;
 }
+.card__faq:target, .card__faq--answer {
+  max-height: 15rem;
+}
+.card__faq:target .toggle-icon {
+  transform: rotate(180deg);
+}
 .card__faq:hover {
   color: #f47c57;
 }
@@ -95,6 +101,8 @@ body {
 .card__faq-answer {
   color: #787887;
   display: none;
+  overflow: hidden;
+  max-height: 0rem;
 }
 
 .attribution {
@@ -105,7 +113,7 @@ body {
   color: #f47c57;
 }
 .attribution a:visited {
-  color: #787887;
+  color: #f47c57;
 }
 .attribution a:active {
   color: #1d1e35;
