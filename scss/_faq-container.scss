@@ -16,6 +16,10 @@
         background: url("../images/illustration-woman-online-desktop.svg") -4vw 0vh rgb(0 0 0 / 0%) no-repeat;
         background-size: 100%;
 
+        &__img-mobile {
+            display: none;
+        }
+
         &__img {
             width: 15.125%;
             position: absolute;

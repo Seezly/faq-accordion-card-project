@@ -77,6 +77,9 @@ body {
   background: url("../images/illustration-woman-online-desktop.svg") -4vw 0vh rgba(0, 0, 0, 0) no-repeat;
   background-size: 100%;
 }
+.faq-container__woman-online__img-mobile {
+  display: none;
+}
 .faq-container__woman-online__img {
   width: 15.125%;
   position: absolute;
@@ -167,6 +170,42 @@ body {
 }
 .attribution__wavy {
   text-decoration: wavy underline;
+}
+
+/*
+
+                                            MEDIA QUERIES
+
+*/
+@media only screen and (max-width: 1199px) {
+  .faq-container {
+    display: block;
+    padding: 3rem 1.5rem;
+    margin: 25% auto;
+    width: 80%;
+    background: url(../images/bg-pattern-mobile.svg) center top white no-repeat;
+    background-size: 65%;
+  }
+  .faq-container__woman-online__img-mobile {
+    display: block;
+    position: absolute;
+    top: 2.5%;
+    width: 55.075%;
+    left: 20%;
+    max-width: 100%;
+  }
+  .faq-container__woman-online__img {
+    display: none;
+  }
+  .faq-container__container {
+    width: 100%;
+  }
+  .faq-container__container__title {
+    color: #1d1e35;
+    text-align: center;
+    margin-top: 30%;
+    font-size: 300%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

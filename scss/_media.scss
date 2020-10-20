@@ -1,0 +1,37 @@
+@media only screen and (max-width: 1199px){
+    .faq-container {
+        display: block;
+        padding: 3rem 1.5rem;
+        margin: 25% auto;
+        width: 80%;
+        background: url(../images/bg-pattern-mobile.svg) center top rgb(255 255 255) no-repeat;
+        background-size: 65%;
+
+        &__woman-online {
+            
+            &__img-mobile {
+                display: block;
+                position: absolute;
+                top: 2.5%;
+                width: 55.075%;
+                left: 20%;
+                max-width: 100%;
+            }
+    
+            &__img {
+                display: none;
+            }
+        }
+
+        &__container {
+            width: 100%;
+    
+            &__title {
+                color: $textActive;
+                text-align: center;
+                margin-top: 30%;
+                font-size: 300%;
+            }
+        }
+    }
+}
