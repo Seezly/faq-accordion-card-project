@@ -1,121 +1,140 @@
 @import "animations";
 
-.faq-container {
-    width: 62.5%;
-    margin: 10% auto;
-    background: url("../images/bg-pattern-desktop.svg") -66vh -36vh white no-repeat;
-    background-size: 100%;
-    border-radius: 1.25rem;
-    padding: 3rem 6rem 3rem 0;
-    overflow: hidden;
-    box-shadow: 0.5rem 1rem 2rem $textPrimary;
+main {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
 
-    &__woman-online {
-        width: 66%;
-        background: url("../images/illustration-woman-online-desktop.svg") -4vw 0vh rgb(0 0 0 / 0%) no-repeat;
+    .faq-container {
+        width: 62.5%;
+        background: url("../images/bg-pattern-desktop.svg") -66vh 75% white no-repeat;
         background-size: 100%;
-
-        &__img-mobile {
-            display: none;
+        border-radius: 1.25rem;
+        padding: 0 3rem 0 0;
+        overflow: hidden;
+        box-shadow: 0.5rem 1rem 2rem $textPrimary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 65%;
+    
+        &__woman-online {
+            width: 66%;
+            background: url("../images/illustration-woman-online-desktop.svg") -4vw center rgb(0 0 0 / 0%) no-repeat;
+            background-size: 90%;
+            height: 75%;
+    
+            &__img-mobile {
+                display: none;
+            }
+    
+            &__img {
+                width: 15.125%;
+                position: absolute;
+                transform: translate(-7.5vw, 17.5vh);
+            }
         }
-
-        &__img {
-            width: 15.125%;
-            position: absolute;
-            transform: translate(-7.5vw, 15vh);
+        
+        &__container {
+            width: 50%;
+            float: right;
+    
+            &__title {
+                color: $textActive;
+            }
         }
     }
     
-    &__container {
-        width: 50%;
-        float: right;
+    .card {
+        padding: 0.5rem 0;
+        border-bottom: $dividers-bottom 1px solid;
+    
+        &__faq {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            flex-wrap: wrap;
+    
+            .toggle-icon {
+                max-height: 7px;
+                
+                @include transition(.5s);
+            }
+            
+            &-answer {
+                color: $textSecundary;
+                overflow: hidden;
+                max-height: 0rem;
+                
+                @include transition(.5s);
+            }
+            
+            &__a {
+                color: $textPrimary;
+                text-decoration: none;
+            }
 
-        &__title {
-            color: $textActive;
+            &:target {
+
+                .card__faq__a {
+                    color: $textActive;
+                    font-weight: $fontWeightSecundary;
+                    text-decoration: none;
+                }
+
+                .toggle-icon {
+                    transform: rotate(180deg);
+
+                    @include transition(.5s);
+                }
+
+                .card__faq-answer {
+                    max-height: 15rem;
+
+                    @include transition(.5s);
+                }
+            }
+            
         }
-    }
-}
-
-.card {
-    padding: 0.5rem 0;
-    border-bottom: $dividers-bottom 1px solid;
-
-    &__faq {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        cursor: pointer;
-        flex-wrap: wrap;
-
-        .toggle-icon {
-            max-height: 7px;
-
-            @include transition(.5s);
-        }
-
-        &:target &__a{
-            color: $textActive;
-            font-weight: $fontWeightSecundary;
-            text-decoration: none;
-        }
-
-        &:target &-answer {
-            max-height: 15rem;
-
-            @include transition(.5s);
-        }
-
-        &:target .toggle-icon {
-            transform: rotate(180deg);
-
-            @include transition(.5s);
-        }
-
-        &__a {
-            color: $textPrimary;
-            text-decoration: none;
-        }
-    }
-
-    &__faq:hover {
-        color: $textHover;
-
-        & .toggle-icon {
-            transform: rotate(180deg);
-
-            @include animation(.5s);
-        }
-    }
-
-    &__faq-answer {
-        color: $textSecundary;
-        overflow: hidden;
-        max-height: 0rem;
-
-        @include transition(.5s);
-    }
-
-}
-
-.attribution {
-    text-align: center;
-    color: $textActive;
-
-    a {
-        text-decoration: none;
-        color: $textHover;
-
-        &:visited {
+        
+        &__faq:hover {
             color: $textHover;
+            
+            & .toggle-icon {
+                transform: rotate(180deg);
+                
+                @include animation(.5s);
+            }
         }
-
-        &:active {
-            color: $textActive;
-        }
+        
     }
-
-    &__wavy {
-        text-decoration: wavy underline;
+    
+    .attribution {
+        text-align: center;
+        color: $textActive;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    
+        a {
+            text-decoration: none;
+            color: $textHover;
+    
+            &:visited {
+                color: $textHover;
+            }
+    
+            &:active {
+                color: $textActive;
+            }
+        }
+    
+        &__wavy {
+            text-decoration: wavy underline;
+        }
     }
 }
